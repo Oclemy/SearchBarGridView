@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ -  Our ContentMain.xml file.
+ -  Shall get inflated to MainActivity.
+ -  Root tag is relativeLayout.
+ -  Contains GridView with two columns.
+ - It is this gridview that we shall be searching.
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tutorials.hp.searchbargridview.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <GridView
+        android:id="@+id/mGridView"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </GridView>
+
+</android.support.constraint.ConstraintLayout>
